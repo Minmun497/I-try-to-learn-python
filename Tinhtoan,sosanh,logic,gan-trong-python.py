@@ -11,12 +11,12 @@ Nếu chiều cao chưa đủ 130 cm nhưng đã đạt tối thiểu 120 cm, b�
 tuoi = 14
 chieu_cao = 118
 de_giay=3
-nguoi_lon_di_kem = False
+nguoi_lon_di_kem = True
 
 chieu_cao_tong = chieu_cao + de_giay
 
 du_tuoi = tuoi >=11
-thoa_man = (chieu_cao_tong>= 130) or (chieu_cao_tong <130 and nguoi_lon_di_kem == True)
+thoa_man = (chieu_cao_tong>= 130) or (120<= chieu_cao_tong <130 and nguoi_lon_di_kem == True)
 duoc_len_tau = du_tuoi and thoa_man
 
 print ("Chiều cao tổng = ",chieu_cao_tong)
